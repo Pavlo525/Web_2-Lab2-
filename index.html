@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="gg.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(238, 230, 230)">
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Lab2</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="shop">Shop</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="goods">Goods</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="storage">Storage</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="GoodsOnStorage">Goods on Storage</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-primary" type="submit" id="GoodsOnShop">Goods on Shop</button>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+    </header>    
+    
+    <section>
+        <section style="margin-right: 120px; margin-left: 120px; margin-top: 90px;">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(238, 230, 230)">
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-1">
+                      <li class="nav-item">
+                        <a class="nav-link active subtitle" aria-current="page" href="#" id="sb">Lab2</a>
+                      </li>
+                     
+                      
+                    </ul>
+                  </div>
+            </nav>
+        </section>
+        <section>
+            <div style="margin-top: 50px; margin-left: 135px;">
+                <div class="row g-2 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label label-id-shop" >Id</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom04" value="" required>
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label label-name-shop" >Name</label>
+                      </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                    </div>
+                    <div class="col-auto">
+                      <label for="inputPassword6" class="col-form-label label-adress-shop">Adress</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                    </div>
+                   
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit" id="create">CREATE</button>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit" id="delete">Delete</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div style="margin-top: 50px; margin-left: 135px;">
+                <div class="row g-2 align-items-center">
+                  <div class="col-auto">
+                    <input type="text" class="form-control" id="transferToStorageInput" value="" required>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="transferToStoragebtn">Transfer goods to storage</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="transferToShopbtn">Transfer goods to shop</button>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control" id="transferToPlanet" value="" required>
+                  </div>
+
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="report">Report</button>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" id="report2">ReportGoods</button>
+                  </div>
+                  <div id="repp">
+
+                  </div>
+                    
+                </div>
+            </div>
+        </section>
+          
+        <section style="margin-top: 15px;">
+            <div style=" margin-left: 1100px;">
+                <div class="row g-2 align-items-center">
+                    <div class="col-auto">
+                      <button class="btn btn-primary" type="submit" id="search">Search</button>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control" id="validationCustom03" value="" required>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section style="margin-top: 17px; margin-left: 135px;">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" class="table1"></th>
+                    <th scope="col" class="table2"></th>
+                    <th scope="col" class="table3"></th>
+                  </tr>
+                </thead >
+                <tbody id="cargo-table">
+                    <tr id="1">
+                    <tr id="2">    
+                    <tr id="3">
+                    <tr id="4"> 
+                  
+                  
+                </tbody>
+            </table>
+        </section>
+        
+        
+        
+    </section>
+    
+    
+     
+<script>
+    class Shop{    
+        Push(){ 
+            var sb = document.querySelector('.subtitle')
+            
+            if(sb.innerHTML=="Shop"){
+                var obj = {
+                id: 1,
+                adress: 1,
+                name: "h",
+                };
+                var iid = (document.getElementById("validationCustom04").value)
+                var iname = (document.getElementById("validationCustom01").value)
+                var iadress = (document.getElementById("validationCustom02").value)
+
+                //   var lname = (document.getElementById("validationCustom02").value)
+                //   var hname = (document.getElementById("transferToStation").value)
+
+                //   var kname = (document.getElementById("transferToPlanet").value)
+
+                obj.adress = iadress
+                obj.name = iname;
+                obj.id = iid
+                    
+                    
+                var serialObj = JSON.stringify(obj);            
+                localStorage.setItem("shop"+String(obj.id), serialObj);
+                var returnObj = JSON.parse(localStorage.getItem("shop"+String(obj.id) ))
+
+                document.getElementById(String(obj.id)).innerHTML = '<th id="shop'+obj.id+ '" scope'+'='+'"row">'+returnObj.id + '</th>'+ '<td id="shop'+obj.name+'">' + returnObj.name + '</td>' + '<td id="shop'+returnObj.adress+'">' + returnObj.adress + '</td></tr>'  
+
+                // document.getElementById(String(hname)).innerHTML = '<th id="transferToStation'+obj.id+ '" scope'+'='+'"row">'+returnObj.id + '</th>'+ '<td id="transferToStation'+obj.name+'">' + returnObj.name + '</td>' + '<td id="transferToStation'+returnObj.mass+'">' + returnObj.mass + '</td>'  
+                // document.getElementById(String(kname)).innerHTML = '<th id="transferToPlanet'+obj.id+ '" scope'+'='+'"row">'+returnObj.id + '</th>'+ '<td id="transferToPlanet'+obj.name+'">' + returnObj.name + '</td>' + '<td id="transferToPlanet'+returnObj.mass+'">' + returnObj.mass + '</td>'  
+
+            }
+
+          
+        }
+          
+        Delete(){ 
+            var sb = document.querySelector('.subtitle')
+            
+            
+            if(sb.innerHTML=="Shop"){
+                var obj = {
+                id: 1,
+                name: "vlad",
+                adress: 1
+                };
+
+                var iid = document.getElementById("validationCustom04").value;
+                var iname = document.getElementById("validationCustom01").value;
+                var iadress = document.getElementById("validationCustom02").value;
+                obj.name = iname;
+                obj.adress = iadress
+                obj.id = iid
+                
+                var serialObj = JSON.stringify(obj); 
+                localStorage.removeItem("shop"+String(obj.id));
+                var returnObj = JSON.parse(localStorage.getItem("shop"+String(obj.id) ))
+                var del1 = document.getElementById("shop"+String(obj.id))
+                var del2 = document.getElementById("shop"+String(obj.name))
+                var del3 = document.getElementById("shop"+String(obj.adress))
+
+                del1.remove() 
+                del2.remove() 
+                del3.remove() 
+            }
+            
+        }
+
+        Search(){              
+            var sb = document.querySelector('.subtitle')
+            if(sb.innerHTML=="Shop"){
+                var i = 1
+                while(i){
+                    try{
+                        var returnObj = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                        var del1 = document.getElementById("shop"+returnObj.id)
+                        var del2 = document.getElementById("shop"+returnObj.name)
+                        var del3 = document.getElementById("shop"+returnObj.adress)
+
+                        del1.remove()  
+                        del2.remove()  
+                        del3.remove()
+                    }
+                    catch(e){
+                        break
+                    }
+  
+                i++
+                }      
+            }     
+        }
+
+        Se(){
+            var sb = document.querySelector('.subtitle')
+            if(sb.innerHTML=="Shop"){
+                var iname = document.getElementById("validationCustom03").value;  
+                var returnObj = JSON.parse(localStorage.getItem("shop"+String(iname) ))
+                document.getElementById(String(iname)).innerHTML = '<th id="shop'+returnObj.id+ '" scope'+'='+'"row">'+returnObj.id + '</th>'+ '<td id="shop'+returnObj.name+'">' + returnObj.name + '</td>' + '<td id="shop'+returnObj.adress+'">' + returnObj.adress + '</td>'   
+            }
+        }
+
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var id = document.querySelector('.label-id-shop')
+            var name = document.querySelector('.label-name-shop')
+            var adress = document.querySelector('.label-adress-shop')
+            var Tid = document.querySelector('.table1')
+            var Tname = document.querySelector('.table2')
+            var Tadress = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Shop"
+            id.innerHTML = "Id"
+            name.innerHTML = "Name"
+            adress.innerHTML = "Adress"
+            Tid.innerHTML = "Id"
+            Tname.innerHTML = "Name"
+            Tadress.innerHTML = "Adress"
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToShop"+String(i)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(i)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                    var del11 = document.getElementById("storage"+returnObj.number)
+                    var del22 = document.getElementById("storage"+returnObj.shop)
+                    var del33 = document.getElementById("storage"+returnObj.capacity)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+
+            var j =1
+            var pointStorage = 1
+            var pointGoods = 1
+            while(j<5){
+                var returnObj = JSON.parse(localStorage.getItem("shop"+j))
+                try{
+                    if(returnObj.id==j){
+                        document.getElementById(String(j)).innerHTML = '<th id="shop'+returnObj.id+ '" scope'+'='+'"row">'+returnObj.id + '</th>'+ '<td id="shop'+returnObj.name+'">' + returnObj.name + '</td>' + '<td id="shop'+returnObj.adress+'">' + returnObj.adress + '</td>'  
+                    }
+                }
+                catch(e){
+                    pointStorage = j
+                    pointGoods = j
+                    break
+                }
+                j++
+            }
+
+            var iwhile = pointGoods + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(iwhile)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.id)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = pointStorage 
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(iwhile)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    
+                }
+                catch(e){
+                    
+                    console.log(iwhile)
+                    break
+                }
+                iwhile++   
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToShop"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj2.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj2.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToStorage"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj2.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj2.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+ 
+           
+        }
+        CargoToStation(){
+          var iname = (document.getElementById("validationCustom04").value)
+          var tr = document.getElementById("transferToStation").value
+          var returnObj = JSON.parse(localStorage.getItem("cargo"+iname ))
+
+          var obj2 = {
+            station: 1,
+            cargoname: "h",
+          };
+          
+          obj2.cargoname = returnObj.name
+          obj2.station = tr
+          var serialObj2 = JSON.stringify(obj2); 
+
+          localStorage.setItem("transferToStation"+iname,serialObj2)
+         
+          
+        }  
+        pusherCargoToStation(){
+
+          return document.getElementById('transferToStationbtn').addEventListener('click', this.CargoToStation)
+        }
+        CargoToPlanet(){
+          var iname = (document.getElementById("validationCustom04").value)
+          var tr = document.getElementById("transferToPlanet").value
+          var returnObj = JSON.parse(localStorage.getItem("cargo"+iname ))
+
+          var obj2 = {
+            planet: 1,
+            cargoname: "h",
+          };
+          
+          obj2.cargoname = returnObj.name
+          obj2.planet = tr
+          var serialObj2 = JSON.stringify(obj2); 
+
+          localStorage.setItem("transferToPlanet"+iname,serialObj2)
+         
+        }  
+        pusherCargoToPlanet(){
+          return document.getElementById('transferToPlanetbtn').addEventListener('click', this.CargoToPlanet)
+        }
+        
+        pusher(){
+            return document.getElementById('create').addEventListener('click', this.Push)
+        }
+       
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+        }
+
+        beginer(){
+            return document.getElementById('shop').addEventListener('click', this.Begin)  
+        }
+
+       searcher(){
+
+        return document.getElementById('search').addEventListener('click', this.Search)
+       }
+       se(){
+        return document.getElementById('search').addEventListener('click', this.Se)
+
+       }
+    }
+
+    class Goods{
+        Push(){ 
+            var sb = document.querySelector('.subtitle')
+            
+            if(sb.innerHTML=="Goods"){
+                var obj = {
+                code: 1,
+                name: "h",
+                country_maker: "jh"
+                };
+
+                var icode = (document.getElementById("validationCustom04").value)
+                var iname = (document.getElementById("validationCustom01").value)
+                var icountry_maker = (document.getElementById("validationCustom02").value)
+                obj.code = icode
+                obj.name = iname;
+                obj.country_maker = icountry_maker
+                
+                var serialObj = JSON.stringify(obj);            
+                localStorage.setItem("goods"+String(obj.code), serialObj);
+                var returnObj = JSON.parse(localStorage.getItem("goods"+String(obj.id) ))
+
+                document.getElementById(String(icode)).innerHTML = '<th id="goods'+icode+ '" scope'+'='+'"row">'+icode + '</th>'+ '<td id="goods'+iname+'">' + iname + '</td>' + '<td id="goods'+icountry_maker+'">' + icountry_maker + '</td>'                 
+            } 
+        }
+        
+        Delete(){ 
+            var sb = document.querySelector('.subtitle')
+            console.log(sb.innerHTML)
+            
+            if(sb.innerHTML=="Goods"){
+                var obj = {
+                code: 1,
+                name: "h",
+                country_maker: "jh"
+                };
+
+                var icode = (document.getElementById("validationCustom04").value)
+                var iname = (document.getElementById("validationCustom01").value)
+                var icountry_maker = (document.getElementById("validationCustom02").value)
+                obj.name = iname;
+                obj.country_maker = icountry_maker
+                obj.code = icode
+                
+                var serialObj = JSON.stringify(obj); 
+                localStorage.removeItem("goods"+String(obj.code));
+                var returnObj = JSON.parse(localStorage.getItem("goods"+String(obj.code) ))
+                var del1 = document.getElementById("goods"+String(obj.code))
+                var del2 = document.getElementById("goods"+String(obj.name))
+                var del3 = document.getElementById("goods"+String(obj.country_maker))
+
+                del1.remove() 
+                del2.remove() 
+                del3.remove() 
+            }
+        }
+
+        Search(){              
+            var sb = document.querySelector('.subtitle')
+
+            if(sb.innerHTML == "Goods"){
+                console.log("search")
+
+                var i = 1
+                while(i){
+                    try{
+                        var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                        var del11 = document.getElementById("goods"+returnObj2.code)
+                        var del22 = document.getElementById("goods"+returnObj2.name)
+                        var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                        del11.remove()  
+                        del22.remove()  
+                        del33.remove()
+                        
+                    }
+                    catch(e){
+                        break
+                    }
+                i++
+                }   
+            }
+            
+            
+        }
+        
+        Se(){
+            var sb = document.querySelector('.subtitle')
+            if(sb.innerHTML=="Goods"){
+                var iname = document.getElementById("validationCustom03").value;  
+                var returnObj = JSON.parse(localStorage.getItem("goods"+String(iname) ))
+                document.getElementById(String(iname)).innerHTML = '<th id="goods'+returnObj.code+ '" scope'+'='+'"row">'+returnObj.code + '</th>'+ '<td id="goods'+returnObj.name+'">' + returnObj.name + '</td>' + '<td id="goods'+returnObj.country_maker+'">' + returnObj.country_maker + '</td>'   
+        
+            }
+               
+        }
+
+        GoodsToStorage(){
+            var sb = document.querySelector('.subtitle')
+
+            if(sb.innerHTML == "Goods"){
+                var icode = (document.getElementById("validationCustom04").value)
+                var iname = (document.getElementById("validationCustom01").value)
+                var im = (document.getElementById("validationCustom02").value)
+                var tr = document.getElementById("transferToStorageInput").value
+                var returnObj = JSON.parse(localStorage.getItem("storage"+String(tr)))
+                var returnObj3 = JSON.parse(localStorage.getItem("goods"+String(icode)))
+
+                var obj2 = {
+                    code: 1,
+                    storage: 1,
+                    goods: "h",
+                    shop: "shop"
+                };
+                console.log(returnObj3.name)
+                obj2.code = icode
+                obj2.storage = tr
+                obj2.goods = returnObj3.name
+                obj2.shop = returnObj.shop
+                console.log(obj2.goods)
+                
+                var serialObj2 = JSON.stringify(obj2); 
+                localStorage.setItem("transferToStorage"+icode,serialObj2)
+            }              
+        }  
+        pusherGoodsToStorage(){
+
+          return document.getElementById('create').addEventListener('click', this.GoodsToStorage)
+        }
+        GoodsToShop(){
+            var sb = document.querySelector('.subtitle')
+
+            if(sb.innerHTML == "Goods"){
+                var icode = (document.getElementById("validationCustom04").value)
+                var iname = (document.getElementById("validationCustom01").value)
+                var im = (document.getElementById("validationCustom02").value)
+                var tr = document.getElementById("transferToStorageInput").value
+                var returnObj = JSON.parse(localStorage.getItem("shop"+String(tr)))
+                var returnObj3 = JSON.parse(localStorage.getItem("goods"+String(icode)))
+
+                var obj2 = {
+                    code: 1,
+                    shop: 1,
+                    goods: "h"
+                    
+                };
+                console.log(returnObj3.name)
+                console.log(tr)
+                obj2.code = icode
+                obj2.shop = returnObj.name
+                obj2.goods = returnObj3.name
+               
+                console.log(obj2.goods)
+                
+                var serialObj2 = JSON.stringify(obj2); 
+                localStorage.setItem("transferToShop"+icode,serialObj2)
+            }              
+        }  
+        pusherGoodsToShop(){
+
+          return document.getElementById('transferToShopbtn').addEventListener('click', this.GoodsToShop)
+        }
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var code = document.querySelector('.label-id-shop')
+            var name = document.querySelector('.label-name-shop')
+            var country_maker = document.querySelector('.label-adress-shop')
+            var Tcode = document.querySelector('.table1')
+            var Tname = document.querySelector('.table2')
+            var Tcountry_maker = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Goods"
+            code.innerHTML = "Code"
+            name.innerHTML = "Name"
+            country_maker.innerHTML = "Country Maker"
+            Tcode.innerHTML = "Code"
+            Tname.innerHTML = "Name"
+            Tcountry_maker.innerHTML = "Country Maker"
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToShop"+String(i)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(i)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+
+            var j =1
+            var point = 1
+            while(j<5){
+                var returnObj = JSON.parse(localStorage.getItem("goods"+j))
+                try{
+                    if(returnObj.code==j){
+                        document.getElementById(String(j)).innerHTML = '<th id="goods'+returnObj.code+ '" scope'+'='+'"row">'+returnObj.code + '</th>'+ '<td id="goods'+returnObj.name+'">' + returnObj.name + '</td>' + '<td id="goods'+returnObj.country_maker+'">' + returnObj.country_maker + '</td>'  
+                    }
+                }
+                catch(e){
+                    point = j
+                    break
+                }
+                j++
+            }
+
+            var iwhile = point + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(iwhile)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(iwhile)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToShop"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj2.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj2.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToStorage"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj2.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj2.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+ 
+          
+            
+        }
+        
+        pusher(){
+            return document.getElementById('create').addEventListener('click', this.Push)
+        }
+
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+        }
+
+        beginer(){
+            return document.getElementById('goods').addEventListener('click', this.Begin)
+        }
+        
+        searcher(){
+            return document.getElementById('search').addEventListener('click', this.Search)
+        }
+
+        se(){
+            return document.getElementById('search').addEventListener('click', this.Se)  
+        }
+       
+    }
+   
+
+    class Storage{   
+        Push(){ 
+            var sb = document.querySelector('.subtitle')
+                       
+            if(sb.innerHTML=="Storage"){
+                var obj = {
+                    number: 1,
+                    shop: "h",
+                    capacity: "jh"
+                };
+                var inumber = (document.getElementById("validationCustom04").value)
+                var ishop = (document.getElementById("validationCustom01").value)
+                var icapacity = (document.getElementById("validationCustom02").value)               
+                obj.number = inumber
+                obj.shop = ishop;
+                obj.capacity = icapacity
+
+                var serialObj = JSON.stringify(obj);            
+                localStorage.setItem("storage"+String(inumber), serialObj);
+                var returnObj = JSON.parse(localStorage.getItem("storage"+String(obj.id) ))
+            
+                document.getElementById(String(inumber)).innerHTML = '<th id="storage'+inumber+ '" scope'+'='+'"row">'+inumber + '</th>'+ '<td id="storage'+ishop+'">' + ishop + '</td>' + '<td id="storage'+icapacity+'">' + icapacity + '</td>'                
+            }    
+        }
+            
+        Delete(){ 
+            var sb = document.querySelector('.subtitle')
+              
+            if(sb.innerHTML="Storage"){
+                var obj = {
+                    number: 1,
+                    shop: "h",
+                    capacity: "jh"
+                };
+
+                var inumber = (document.getElementById("validationCustom04").value)
+                var ishop = (document.getElementById("validationCustom01").value)
+                var icapacity = (document.getElementById("validationCustom02").value)      
+                obj.number = inumber
+                obj.shop = ishop;
+                obj.capacity = icapacity
+                
+                var serialObj = JSON.stringify(obj); 
+                localStorage.removeItem("storage"+String(inumber));
+                var returnObj = JSON.parse(localStorage.getItem("storage"+String(obj.number) ))
+                var del1 = document.getElementById("storage"+String(obj.number))
+                var del2 = document.getElementById("storage"+String(obj.shop))
+                var del3 = document.getElementById("storage"+String(obj.capacity))
+
+                del1.remove() 
+                del2.remove() 
+                del3.remove() 
+            }   
+        }
+
+        Search(){              
+            var sb = document.querySelector('.subtitle')
+            if(sb.innerHTML=="Storage"){
+                var i = 1
+                while(i){
+                    try{
+                        var returnObj = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                        var del1 = document.getElementById("storage"+returnObj.number)
+                        var del2 = document.getElementById("storage"+returnObj.shop)
+                        var del3 = document.getElementById("storage"+returnObj.capacity)
+
+                        del1.remove()  
+                        del2.remove()  
+                        del3.remove() 
+                    }
+                    catch(e){
+                        break
+                    }
+ 
+                i++
+                }      
+            }     
+        }
+
+        Se(){
+            var sb = document.querySelector('.subtitle')
+            if(sb.innerHTML=="Storage"){
+                var iname = document.getElementById("validationCustom03").value;  
+                var returnObj = JSON.parse(localStorage.getItem("storage"+String(iname) ))
+                document.getElementById(String(iname)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'   
+            }
+        }
+
+        Report(){
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var S = 1
+            var rep = {
+                id: 1,
+                count: 0
+            }
+            // var j = 1
+            var arr = []
+            // while(j<4){
+            //     var returnObjTransfer = JSON.parse(localStorage.getItem("transferToStorage"+j))
+            //     arr.push(j)
+
+            //     if(returnObjTransfer.storage == rep.id){
+            //         rep.count++
+            //         var returnObj = JSON.parse(localStorage.getItem("storage"+j))
+            //         if(rep.count<(returnObj.capacity)/5){
+            //             document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+
+            //         }
+                    
+            //     }
+            //     rep.count = 0 
+                // else{
+                //     console.log(rep.count)
+                //     var returnObj = JSON.parse(localStorage.getItem("storage"+j))
+                //     if(rep.count<(returnObj.capacity)/5){
+                //         document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+
+                //     }
+            
+                //     S = 1  
+                //     rep.count = 0  
+                //     rep.id++                  
+                //     console.log("2 try")
+                // }
+
+                // j++
+            // }
+            var i = 1
+            var j = 1
+            while(i<4){
+                console.log(j)
+                while(j<4){
+                    var returnObjTransfer = JSON.parse(localStorage.getItem("transferToStorage"+j))
+                    console.log(returnObjTransfer.code)
+                    console.log(returnObjTransfer.goods)
+                    
+                    if(returnObjTransfer.storage==rep.id){
+                        rep.count++
+                        
+                    }
+                    j++
+                }
+                arr.push(rep.count)
+                rep.count = 0
+                rep.id++
+                console.log(rep.id)
+                j = rep.id
+                i++
+            }
+            console.log(arr)
+
+            var j = 1
+            while(j<4){
+                var returnObj = JSON.parse(localStorage.getItem("storage"+j))
+                if(arr[j]<(returnObj.capacity)/5){
+                    document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+
+                }
+                j++
+            }
+        }
+
+        Report2(){
+            var inumber = (document.getElementById("validationCustom04").value)
+            var j = 1
+            var count = 0
+            while(j<4){
+                var returnObjTransfer = JSON.parse(localStorage.getItem("transferToStorage"+j))
+                if(returnObjTransfer.storage == inumber){
+                    count++
+                }
+                j++
+            }
+            document.getElementById("repp").innerHTML = count
+        }
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var number = document.querySelector('.label-id-shop')
+            var shop = document.querySelector('.label-name-shop')
+            var capacity = document.querySelector('.label-adress-shop')
+            var Tnumber = document.querySelector('.table1')
+            var Tshop = document.querySelector('.table2')
+            var Tcapacity = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Storage"
+            number.innerHTML = "Number"
+            shop.innerHTML = "Shop"
+            capacity.innerHTML = "Capacity"
+            Tnumber.innerHTML = "Number"
+            Tshop.innerHTML = "Shop"
+            Tcapacity.innerHTML = "Capacity"
+            
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                    var del11 = document.getElementById("shop"+returnObj.id)
+                    var del22 = document.getElementById("shop"+returnObj.name)
+                    var del33 = document.getElementById("shop"+returnObj.adress)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToShop"+String(i)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(i)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj.goods)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            var j =1
+            var point = 1
+            while(j<5){
+                var returnObj = JSON.parse(localStorage.getItem("storage"+j))
+                try{
+                    if(returnObj.number==j){
+                        document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+                    }
+                }
+                catch(e){
+                    point = j
+                    break
+                }
+                j++
+            }
+
+            var iwhile = point + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(iwhile)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(iwhile)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+            }   
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToStorage"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj2.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj2.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+            }   
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToShop"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj2.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj2.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+            }   
+            var a =  JSON.parse(localStorage.getItem("shop1"))
+            try{
+                var del11 = document.getElementById("shop"+String(a.id))
+                var del22 = document.getElementById("shop"+String(a.name))
+                var del33 = document.getElementById("shop"+String(a.adress))
+                del11.remove()
+                del22.remove()
+                del33.remove()
+                console.log("shop1")
+            }
+            catch(e){
+            }
+
+           
+        }
+        
+        pusher(){
+            return document.getElementById('create').addEventListener('click', this.Push)
+        }
+       
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+        }
+
+        beginer(){
+            return document.getElementById('storage').addEventListener('click', this.Begin)  
+        }
+
+       searcher(){
+        return document.getElementById('search').addEventListener('click', this.Search)
+       }
+
+       se(){
+        return document.getElementById('search').addEventListener('click', this.Se)
+       }
+
+       reporter(){
+        return document.getElementById('report').addEventListener('click', this.Report)
+
+       }
+
+       report2(){
+        return document.getElementById('report2').addEventListener('click', this.Report2)
+
+       }
+    }
+class GoodsOnStorage{
+    Push(){ 
+            var sb = document.querySelector('.subtitle')
+            
+            
+            if(sb.innerHTML=="Delivered Cargo To The Station"){
+                var obj = {
+                station: "h",
+                cargoname: "jh"
+                };
+                var fname = (document.getElementById("validationCustom04").value)
+                localStorage.removeItem("transferToStation"+fname)
+                var lname = (document.getElementById("validationCustom01").value)
+                var iname = (document.getElementById("transferToStation").value)
+                obj.station = iname
+                obj.cargoname = lname;
+                
+                
+                
+                var serialObj = JSON.stringify(obj);            
+                localStorage.setItem("transferToStation"+obj.station, serialObj);
+                var returnObj = JSON.parse(localStorage.getItem("transferToStation"+String(obj.station) ))
+
+                
+                document.getElementById(String(fname)).innerHTML = '<th id="transferToStation'+obj.station+ '" scope'+'='+'"row">'+returnObj.station + '</th>'+ '<td id="planet'+obj.cargoname+'">' + returnObj.cargoname + '</td>'  
+                
+            }
+
+          
+        }
+
+        Delete(){
+            var sb = document.querySelector('.subtitle')
+              
+              if(sb.innerHTML=="Goods On Storage"){
+                  var obj = {
+                      code: 1,
+                      storage: "h",
+                      goods: "jh",
+                      shop: "6"
+                  };
+  
+                  var icode = (document.getElementById("validationCustom04").value)
+                  var istorage = (document.getElementById("validationCustom01").value)
+                  var igoods = (document.getElementById("validationCustom02").value)      
+                  obj.code = icode
+                  obj.storage = istorage;
+                  obj.goods = igoods
+                  
+                  var serialObj = JSON.stringify(obj); 
+                  localStorage.removeItem("transferToStorage"+String(icode));
+                  var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(icode) ))
+                  var del1 = document.getElementById("transferToStorage"+String(icode))
+                  var del2 = document.getElementById("transferToStorage"+String(istorage))
+                  var del3 = document.getElementById("transferToStorage"+String(igoods))
+                  
+                  del1.remove() 
+                  del2.remove() 
+                  del3.remove() 
+              }  
+        }
+
+        GoodsFromSrorageToStorage(){
+            var icode = (document.getElementById("validationCustom04").value)
+            var iname = (document.getElementById("validationCustom01").value)
+            var igoods = (document.getElementById("validationCustom02").value)
+            var tr = document.getElementById("transferToStorageInput").value
+
+            var q =  JSON.parse(localStorage.getItem("storage"+String(tr)))
+            var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(icode)))
+
+            var obj2 = {
+                code: 1,
+                storage: 1,
+                goods: "h",
+                shop: "shop"
+            };
+            if(returnObj.shop == q.shop){
+                console.log("ау")
+
+                obj2.code = icode
+                obj2.storage = tr
+                obj2.goods = igoods
+                obj2.shop = returnObj.shop
+                var serialObj3 = JSON.stringify(obj2); 
+                localStorage.setItem("transferToStorage"+icode,serialObj3) 
+
+                var j =1
+                while(j<5){
+                    var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+j))
+                    try{
+                        if(returnObj.code==j){
+                            document.getElementById(String(j)).innerHTML = '<th id="transferToStorage'+returnObj.code+ '" scope'+'='+'"row">'+returnObj.code + '</th>'+ '<td id="transferToStorage'+returnObj.storage+'">' + returnObj.storage + '</td>' + '<td id="transferToStorage'+returnObj.goods+'">' + returnObj.goods + '</td>'  
+                        }
+                    }
+                    catch(e){
+                        break
+                    }
+                    j++
+                }
+
+            }
+            else{
+                console.log("не той магазин")
+            }
+            
+            
+                     
+        }  
+        pusherGoodsFromSrorageToStorage(){
+
+          return document.getElementById('transferToStoragebtn').addEventListener('click', this.GoodsFromSrorageToStorage)
+        }
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var id = document.querySelector('.label-id-shop')
+            var storage = document.querySelector('.label-name-shop')
+            var goods = document.querySelector('.label-adress-shop')
+            var Tid = document.querySelector('.table1')
+            var Tstorage = document.querySelector('.table2')
+            var Tgoods = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Goods On Storage"
+            id.innerHTML = "Id"
+            storage.innerHTML = "Storage"
+            goods.innerHTML = "Goods"
+            Tid.innerHTML = "Id"
+            Tstorage.innerHTML = "Storage"
+            Tgoods.innerHTML = "Goods"
+            
+            
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToShop"+String(i)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj2.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj2.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var j =1
+            var point = 1
+            while(j<5){
+                var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+j))
+                try{
+                    if(returnObj.code==j){
+                        document.getElementById(String(j)).innerHTML = '<th id="transferToStorage'+returnObj.code+ '" scope'+'='+'"row">'+returnObj.code + '</th>'+ '<td id="transferToStorage'+returnObj.storage+'">' + returnObj.storage + '</td>' + '<td id="transferToStorage'+returnObj.goods+'">' + returnObj.goods + '</td>'  
+                    }
+                }
+                catch(e){
+                    point = j
+                    break
+                }
+                j++
+            }
+
+            var iwhile = point + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(iwhile)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(iwhile)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(iwhile)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToShop"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToShop"+returnObj2.code)
+                    var del22 = document.getElementById("transferToShop"+returnObj2.shop)
+                    var del33 = document.getElementById("transferToShop"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+        }  
+        
+        pusher(){
+            return document.getElementById('create').addEventListener('click', this.Push)
+
+        }
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+
+        }
+
+        beginer(){
+            
+            return document.getElementById('GoodsOnStorage').addEventListener('click', this.Begin)
+           
+        }
+
+       searcher(){
+
+        return document.getElementById('search').addEventListener('click', this.Search)
+       }
+       se(){
+        return document.getElementById('search').addEventListener('click', this.Se)
+
+       }
+    }
+    class GoodsOnShop{
+   
+
+        Delete(){
+            var sb = document.querySelector('.subtitle')
+              
+              if(sb.innerHTML=="Goods On Storage"){
+                  var obj = {
+                      code: 1,
+                      storage: "h",
+                      goods: "jh",
+                      shop: "6"
+                  };
+  
+                  var icode = (document.getElementById("validationCustom04").value)
+                  var istorage = (document.getElementById("validationCustom01").value)
+                  var igoods = (document.getElementById("validationCustom02").value)      
+                  obj.code = icode
+                  obj.storage = istorage;
+                  obj.goods = igoods
+                  
+                  var serialObj = JSON.stringify(obj); 
+                  localStorage.removeItem("transferToStorage"+String(icode));
+                  var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(icode) ))
+                  var del1 = document.getElementById("transferToStorage"+String(icode))
+                  var del2 = document.getElementById("transferToStorage"+String(istorage))
+                  var del3 = document.getElementById("transferToStorage"+String(igoods))
+                  
+                  del1.remove() 
+                  del2.remove() 
+                  del3.remove() 
+              }  
+        }
+
+       
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var id = document.querySelector('.label-id-shop')
+            var storage = document.querySelector('.label-name-shop')
+            var goods = document.querySelector('.label-adress-shop')
+            var Tid = document.querySelector('.table1')
+            var Tstorage = document.querySelector('.table2')
+            var Tgoods = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Goods On Shop"
+            id.innerHTML = "Id"
+            storage.innerHTML = "Shop"
+            goods.innerHTML = "Goods"
+            Tid.innerHTML = "Id"
+            Tstorage.innerHTML = "Shop"
+            Tgoods.innerHTML = "Goods"
+            
+            
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(i)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToStorage"+String(i)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj2.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj2.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var j =1
+            var point = 1
+            while(j<5){
+                var returnObj = JSON.parse(localStorage.getItem("transferToShop"+j))
+                try{
+                    if(returnObj.code==j){
+                        document.getElementById(String(j)).innerHTML = '<th id="transferToShop'+returnObj.code+ '" scope'+'='+'"row">'+returnObj.code + '</th>'+ '<td id="transferToShop'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="transferToShop'+returnObj.goods+'">' + returnObj.goods + '</td>'  
+                    }
+                }
+                catch(e){
+                    point = j
+                    break
+                }
+                j++
+            }
+
+            var iwhile = point + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(iwhile)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("storage"+String(iwhile)))                    
+                    var del11 = document.getElementById("storage"+returnObj2.number)
+                    var del22 = document.getElementById("storage"+returnObj2.shop)
+                    var del33 = document.getElementById("storage"+returnObj2.capacity)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(iwhile)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("transferToStorage"+String(iwhile)))                    
+                    var del11 = document.getElementById("transferToStorage"+returnObj2.code)
+                    var del22 = document.getElementById("transferToStorage"+returnObj2.storage)
+                    var del33 = document.getElementById("transferToStorage"+returnObj2.goods)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            
+        }  
+        
+        pusher(){
+            return document.getElementById('create').addEventListener('click', this.Push)
+
+        }
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+
+        }
+
+        beginer(){
+            
+            return document.getElementById('GoodsOnShop').addEventListener('click', this.Begin)
+           
+        }
+
+       searcher(){
+
+        return document.getElementById('search').addEventListener('click', this.Search)
+       }
+       se(){
+        return document.getElementById('search').addEventListener('click', this.Se)
+
+       }
+    }
+    class Report{
+   
+
+        Delete(){
+            var sb = document.querySelector('.subtitle')
+              
+              if(sb.innerHTML=="Goods On Storage"){
+                  var obj = {
+                      code: 1,
+                      storage: "h",
+                      goods: "jh",
+                      shop: "6"
+                  };
+  
+                  var icode = (document.getElementById("validationCustom04").value)
+                  var istorage = (document.getElementById("validationCustom01").value)
+                  var igoods = (document.getElementById("validationCustom02").value)      
+                  obj.code = icode
+                  obj.storage = istorage;
+                  obj.goods = igoods
+                  
+                  var serialObj = JSON.stringify(obj); 
+                  localStorage.removeItem("transferToStorage"+String(icode));
+                  var returnObj = JSON.parse(localStorage.getItem("transferToStorage"+String(icode) ))
+                  var del1 = document.getElementById("transferToStorage"+String(icode))
+                  var del2 = document.getElementById("transferToStorage"+String(istorage))
+                  var del3 = document.getElementById("transferToStorage"+String(igoods))
+                  
+                  del1.remove() 
+                  del2.remove() 
+                  del3.remove() 
+              }  
+        }
+
+        
+        Begin(){
+            var subtitle = document.querySelector('.subtitle')
+            var number = document.querySelector('.label-id-shop')
+            var shop = document.querySelector('.label-name-shop')
+            var capacity = document.querySelector('.label-adress-shop')
+            var Tnumber = document.querySelector('.table1')
+            var Tshop = document.querySelector('.table2')
+            var Tcapacity = document.querySelector('.table3')
+
+            subtitle.innerHTML = "Storage"
+            number.innerHTML = "Number"
+            shop.innerHTML = "Shop"
+            capacity.innerHTML = "Capacity"
+            Tnumber.innerHTML = "Number"
+            Tshop.innerHTML = "Shop"
+            Tcapacity.innerHTML = "Capacity"
+            
+            var i = 1
+            while(i){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(i)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+     
+            }
+            var i = 1
+            while(i){
+                try{
+                    var returnObj = JSON.parse(localStorage.getItem("shop"+String(i)))                    
+                    var del11 = document.getElementById("shop"+returnObj.id)
+                    var del22 = document.getElementById("shop"+returnObj.name)
+                    var del33 = document.getElementById("shop"+returnObj.adress)
+                    del1.remove()  
+                    del2.remove()  
+                    del3.remove()
+                    i++
+                }
+                catch(e){
+                    break
+                }
+            }
+            
+            var j =1
+            var point = 1
+            var reportId = 1
+            var reportCount = 0
+            var S = 1
+            var rep = {
+                id: 1,
+                count: 0
+            }
+            var arr = []
+
+            while(j<5){
+                var returnObjTransfer = JSON.parse(localStorage.getItem("transferToStorage"+j))
+                
+                try{
+                    if(returnObjTransfer.storage == rep.id){
+                        rep.count++
+                    }
+                }
+                catch(e){  
+                    if(rep.count<(returnObj.capacity)/5){
+                        while(S<S+rep.count){
+                            document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+                            S++
+                        }
+                    }
+                    // try{
+                    //     var returnObjTransfer = JSON.parse(localStorage.getItem("transferToStorage"+j+1))
+                    //     rep.id = returnObjTransfer.storage
+                    // }
+                    // catch(e){
+
+                    // } 
+                    S = j+1    
+                    rep.count = 0  
+                    rep.id++                  
+                    break
+                }
+                j++
+            }
+            // var j =1
+            // while(j<5){
+                
+            //     try{
+            //         var returnObj = JSON.parse(localStorage.getItem("storage"+j))
+
+            //         if(arr[j]<(returnObj.capacity)/5){
+            //             document.getElementById(String(j)).innerHTML = '<th id="storage'+returnObj.number+ '" scope'+'='+'"row">'+returnObj.number + '</th>'+ '<td id="storage'+returnObj.shop+'">' + returnObj.shop + '</td>' + '<td id="storage'+returnObj.capacity+'">' + returnObj.capacity + '</td>'  
+            //         }
+            //     }
+            //     catch(e){
+
+            //     }
+            // }
+            var iwhile = point + 1
+                
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("goods"+String(iwhile)))                    
+                    var del11 = document.getElementById("goods"+returnObj2.code)
+                    var del22 = document.getElementById("goods"+returnObj2.name)
+                    var del33 = document.getElementById("goods"+returnObj2.country_maker)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+                    
+                    
+            }  
+            var iwhile = point + 1
+            while(iwhile){
+                try{
+                    var returnObj2 = JSON.parse(localStorage.getItem("shop"+String(iwhile)))                    
+                    var del11 = document.getElementById("shop"+returnObj2.id)
+                    var del22 = document.getElementById("shop"+returnObj2.name)
+                    var del33 = document.getElementById("shop"+returnObj2.adress)
+                    del11.remove()  
+                    del22.remove()  
+                    del33.remove()
+                    iwhile++
+                }
+                catch(e){
+                    break
+                }
+            }   
+            var a =  JSON.parse(localStorage.getItem("shop1"))
+            try{
+                var del11 = document.getElementById("shop"+String(a.id))
+                var del22 = document.getElementById("shop"+String(a.name))
+                var del33 = document.getElementById("shop"+String(a.adress))
+                del11.remove()
+                del22.remove()
+                del33.remove()
+                console.log("shop1")
+            }
+            catch(e){
+            }
+
+           
+        }
+        
+       
+        deleter(){
+            return document.getElementById('delete').addEventListener('click', this.Delete)
+
+        }
+
+        beginer(){
+            
+            return document.getElementById('GoodsOnShop').addEventListener('click', this.Begin)
+           
+        }
+
+       searcher(){
+
+        return document.getElementById('search').addEventListener('click', this.Search)
+       }
+       se(){
+        return document.getElementById('search').addEventListener('click', this.Se)
+
+       }
+    }
+
+    
+    
+    let shop = new Shop()  
+    shop.beginer()
+    shop.pusher()
+    shop.deleter()
+    shop.searcher()
+    shop.se()
+    
+    let storage = new Storage()
+    storage.beginer()
+    storage.pusher()
+    storage.deleter()
+    storage.searcher()
+    storage.se()
+    storage.reporter()
+    storage.report2()
+
+    let goods = new Goods()
+    goods.beginer()
+    goods.pusher()
+    goods.deleter()
+    goods.searcher()
+    goods.se()
+    goods.pusherGoodsToStorage()
+    goods.pusherGoodsToShop()
+    
+
+    let goodsOnStorage = new GoodsOnStorage()
+    goodsOnStorage.beginer()
+    goodsOnStorage.pusherGoodsFromSrorageToStorage()
+    goodsOnStorage.deleter()
+
+    let goodsOnShop = new GoodsOnShop()
+    goodsOnShop.beginer()
+    goodsOnShop.deleter()
+    localStorage.clear()
+    
+</script>
+
+        
+</body>
+</html>
+
